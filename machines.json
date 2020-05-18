@@ -1,0 +1,34 @@
+{
+    "controller-ip" : "https://127.0.1.1",
+    "_controller_comment": "The controller-ip is the IP address hosting the controller",
+    "controller-port" : "4430",
+    "upc-port" : "8123",
+    "querier-port" : "1414",
+    "tick-period" : "60",
+    "pause-ticks" : "3000000",
+    "kill-ticks" : "1500000",
+    "swarm-port" : "54321",
+    "machines" :
+        {
+            "https://127.0.1.1" : "1"
+        },
+    "_machines_comment" : "The machines keyword contains a dictionary of machines, where the mapping is machine base address -> numeric value, which can be any number used to represent the weight the machine should be given. The built in controller then attempts to assign containers proportional to that weight (so if 1 machine had a value \"2\" and another a value \"1\" the first should get twice as many containers as the second)",
+    "register_user_endpoint" : "/profile/create",
+    "insert_endpoint" : "/data/insert",
+    "insert_deprecated_endpoint" : "/data/insert-deprecated",
+    "find_endpoint" : "/data/find",
+    "find_one_endpoint" : "/data/find_one",
+    "delete_endpoint" : "/data/delete",
+    "update_endpoint" : "/data/update",
+    "replace_one_endpoint" : "/data/replace_one",
+    "update_deprecated_endpoint" : "/data/update-deprecated",
+    "count_endpoint" : "/data/count",
+    "distinct_endpoint" : "/data/distinct",
+    "service_endpoint" : "/service_request",
+    "cloud_key_endpoint" : "/cloud/key",
+    "cloud_aggregate_endpoint" : "/run/aggregate",
+    "query_endpoint" : "/receive_query",
+    "privacy_budget_endpoint" : "/privacy_budget",
+    "_certificate_bundle_comment" : "path provided to were trusted certificates are located on a machine",
+    "certificate_bundle": "conf/net/certificates/public-certs.pem"
+}
